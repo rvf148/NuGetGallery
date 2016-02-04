@@ -687,7 +687,7 @@ namespace NuGetGallery
             return View(model);
         }
 
-        [Authorize(Roles = "Admins")]
+        [Authorize(Roles = Constants.AdminRoleName)]
         [HttpPost]
         [RequiresAccountConfirmation("delete a package")]
         [ValidateAntiForgeryToken]

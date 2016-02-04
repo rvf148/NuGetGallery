@@ -4,7 +4,7 @@ using System.Web.Mvc;
 
 namespace NuGetGallery.Areas.Admin.Controllers
 {
-    [Authorize(Roles="Admins")]
+    [Authorize(Roles=Constants.AdminRoleName)]
     public class AdminControllerBase : AppController
     {
     }
